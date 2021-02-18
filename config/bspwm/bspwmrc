@@ -1,0 +1,60 @@
+#! /bin/sh
+
+xrdb ~/.Xresources &
+
+bspc config top_padding        55
+bspc config bottom_padding     30
+bspc config left_padding       40
+bspc config right_padding      40
+bspc config border_width       0
+bspc config window_gap         10
+bspc config 
+
+# Borders and gaps
+bspc config borderless_monocle true
+bspc config gapless_monocle true
+
+# Border colors
+bspc config normal_border_color "#484848"
+bspc config focused_border_color "#AF865A"
+bspc config urgent_border_color "#B58900"
+bspc config presel_border_color "#26E2FF"
+
+# It looks like these options get overridden by Compton...
+bspc config normal_frame_opacity 0.75
+bspc config focused_frame_opacity 0.75
+
+# Multihead behavior
+bspc config remove_disabled_monitors true
+bspc config remove_unplugged_monitors true
+
+# Focusing behavior
+bspc config focus_follows_pointer false
+bspc config history_aware_focus true
+bspc config focus_by_distance true
+
+# Misc
+bspc config split_ratio 0.50
+bspc config auto_alternate true
+bspc config auto_cancel true
+bspc config initial_polarity second_child
+
+# Set up displays
+bspc monitor -d I II III IV V
+
+# startup
+# mpv --loop --wid=0 ~/Downloads/d.gif
+# dunst &
+# feh-blur -d &
+# udiskie &
+# colorer -R
+#$HOME/scripts/feh-blur -d &
+#nm-applet &
+#brightnessctl set 15 &
+#nitrogen --restore &
+
+sxhkd &
+~/.screenlayout/standard.sh &
+wal -R &
+picom -b &
+~/.config/polybar/launch.sh &

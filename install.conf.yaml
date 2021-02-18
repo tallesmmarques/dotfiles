@@ -10,5 +10,7 @@
     ~/.config/i3:
         path: config/i3/
         create: true
-
+    ~/.config/bspwm:
+        path: config/bspwm/
+        create: true
 
