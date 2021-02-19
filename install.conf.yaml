@@ -14,3 +14,5 @@
         path: config/bspwm/
         create: true
 
+- sheel:
+    - ['git clone https://github.com/asdf-vm/asdf.git ~/.asdf | true', Cloning asdf]
