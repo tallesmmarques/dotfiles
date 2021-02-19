@@ -14,6 +14,7 @@
     ~/.xinitrc: xinitrc
     ~/.config/i3: config/i3/
     ~/.config/bspwm: config/bspwm/
+    ~/.config/polybar: config/polybar/
 
 - sheel:
     - ['git clone https://github.com/asdf-vm/asdf.git ~/.asdf | true', Cloning asdf]
