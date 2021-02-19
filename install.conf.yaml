@@ -1,3 +1,8 @@
+- default:
+  link:
+    create: true
+    relink: true
+
 - clean: ['~']
 
 - link:
@@ -7,12 +12,8 @@
     ~/.gitconfig: gitconfig
     ~/.zshrc: zshrc
     ~/.xinitrc: xinitrc
-    ~/.config/i3:
-        path: config/i3/
-        create: true
-    ~/.config/bspwm:
-        path: config/bspwm/
-        create: true
+    ~/.config/i3: config/i3/
+    ~/.config/bspwm: config/bspwm/
 
 - sheel:
     - ['git clone https://github.com/asdf-vm/asdf.git ~/.asdf | true', Cloning asdf]
