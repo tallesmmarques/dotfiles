@@ -16,6 +16,3 @@
     ~/.config/bspwm: config/bspwm/
     ~/.config/polybar: config/polybar/
     ~/.config/rofi: config/rofi/
-
-- sheel:
-    - ['git clone https://github.com/asdf-vm/asdf.git ~/.asdf | true', Cloning asdf]
