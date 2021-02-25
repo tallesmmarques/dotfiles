@@ -16,4 +16,7 @@
     ~/.config/bspwm: config/bspwm/
     ~/.config/polybar: config/polybar/
     ~/.config/rofi: config/rofi/
+<<<<<<< HEAD
     ~/.config/sxhkd: config/sxhkd/
+=======
+>>>>>>> 4a280b262bf44ee763aa7ace272b8f0f0eedfe96
