@@ -112,3 +112,5 @@ source $ZSH/oh-my-zsh.sh
 
 (cat ~/.cache/wal/sequences &)
 export PATH=$HOME/.config/rofi/bin:$PATH
+export PATH=$HOME/scripts/colors:$PATH
+export PATH=$HOME/scripts:$PATH

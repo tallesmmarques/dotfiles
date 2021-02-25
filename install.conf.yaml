@@ -17,3 +17,5 @@
     ~/.config/polybar: config/polybar/
     ~/.config/rofi: config/rofi/
     ~/.config/sxhkd: config/sxhkd/
+    ~/scripts: scripts/
+    ~/colors: colors/
