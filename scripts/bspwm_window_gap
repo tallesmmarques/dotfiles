@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if test "$#" -ne 1; then
+    echo "illegal number of parameters"
+    exit 1
+fi
+
+A=$(bspc config window_gap)
+
+bspc config window_gap $(($A + $1))
+
+echo "gaps increased by $1px"

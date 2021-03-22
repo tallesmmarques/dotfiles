@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if test "$#" -ne 1; then
+    echo "illegal number of parameters"
+    exit 1
+fi
+
+r=$(bspc config right_padding)
+l=$(bspc config left_padding)
+t=$(bspc config top_padding)
+b=$(bspc config bottom_padding)
+
+bspc config right_padding $(($r + $1))
+bspc config left_padding $(($l + $1))
+bspc config top_padding $(($t + $1))
+bspc config bottom_padding $(($b + $1))
+
+echo "paddings increased by $1px"
