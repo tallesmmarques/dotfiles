@@ -16,7 +16,7 @@ XF86Audio{Raise,Lower}Volume
 
 # Change screen brightness
 XF86MonBrightness{Up,Down}
-    brightnessctl set {+10%,-10%}
+    brightnessctl set {+5%,5%-}
 
 #
 # wm independent hotkeys
@@ -36,15 +36,16 @@ super + F3
 
 # browser
 super + F2
-	firefox
+	google-chrome-stable
 
 # program launcher
 super + @space
-	~/.config/rofi/bin/launcher_colorful
+#	dmenu_run
+	~/.config/polybar/blocks/scripts/launcher.sh
 
 # powermenu
 super + x
-  ~/.config/rofi/bin/powermenu
+  	~/.config/polybar/blocks/scripts/powermenu.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -53,6 +54,20 @@ super + Escape
 #
 # bspwm hotkeys
 #
+
+# toggle polybar
+super + alt + p
+  polybar-msg cmd toggle
+
+# add/sub border padding
+super + {p,P}
+  /home/talles/scripts/bspwm_padding {10, -10}
+
+# add/sub gap in windows
+super + u
+  /home/talles/scripts/bspwm_window_gap 5
+super + alt + u
+  /home/talles/scripts/bspwm_window_gap -5
 
 # quit/restart bspwm
 super + alt + {q,r}

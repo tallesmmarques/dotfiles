@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -68,7 +75,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo vscode asdf deno docker docker-compose)
+plugins=(git sudo vscode asdf docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,6 +105,12 @@ source $ZSH/oh-my-zsh.sh
 alias time="/usr/bin/time -p"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias czsh="nvim ~/.zshrc"
+alias szsh="source ~/.zshrc"
+alias paci="sudo pacman -S"
+alias pacs="pacman -Ss"
+alias boilerplate-react-eslint="exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/paulolramos/eslint-prettier-airbnb-react/master/eslint-prettier-config.sh 2> /dev/null)"
+alias terminal-theme='bash -c "$(wget -qO- https://git.io/vQgMr)"'
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
@@ -130,3 +143,8 @@ zinit light zsh-users/zsh-completions
 export PATH=$HOME/.config/rofi/bin:$PATH
 export PATH=$HOME/scripts/colors:$PATH
 export PATH=$HOME/scripts:$PATH
+
+eval $(keychain --eval --quiet id_ed25519)
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
