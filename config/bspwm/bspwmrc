@@ -2,14 +2,15 @@
 
 xrdb ~/.Xresources &
 killall polybar 
+killall redshift
 xsetroot -cursor_name left_ptr &
 
-bspc config top_padding        20
+bspc config top_padding        0
 bspc config bottom_padding     0
 bspc config left_padding       0
 bspc config right_padding      0
 bspc config border_width       0
-bspc config window_gap         20
+bspc config window_gap         30
 
 # Borders and gaps
 bspc config borderless_monocle true
@@ -58,6 +59,7 @@ bspc monitor eDP-1 -d 1 2 3 4 5
 sxhkd &
 #~/.screenlayout/standard.sh &
 wal -R &
+~/.config/polybar/launch.sh --hack &
 picom -b &
-~/.config/polybar/launch.sh --blocks &
+redshift -t 6500:3200 &
 

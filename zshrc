@@ -111,6 +111,7 @@ alias paci="sudo pacman -S"
 alias pacs="pacman -Ss"
 alias boilerplate-react-eslint="exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/paulolramos/eslint-prettier-airbnb-react/master/eslint-prettier-config.sh 2> /dev/null)"
 alias terminal-theme='bash -c "$(wget -qO- https://git.io/vQgMr)"'
+alias wttr-fsa='curl wttr.in/-15.56,-47.33'
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
@@ -144,7 +145,7 @@ export PATH=$HOME/.config/rofi/bin:$PATH
 export PATH=$HOME/scripts/colors:$PATH
 export PATH=$HOME/scripts:$PATH
 
-eval $(keychain --eval --quiet id_ed25519)
+#eval $(keychain --eval --quiet id_ed25519)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

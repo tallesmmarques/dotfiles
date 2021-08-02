@@ -41,11 +41,11 @@ super + F2
 # program launcher
 super + @space
 #	dmenu_run
-	~/.config/polybar/blocks/scripts/launcher.sh
+	~/.config/polybar/hack/scripts/launcher.sh
 
 # powermenu
 super + x
-  	~/.config/polybar/blocks/scripts/powermenu.sh
+  ~/.config/polybar/hack/scripts/powermenu.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
