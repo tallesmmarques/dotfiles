@@ -1,0 +1,17 @@
+{
+  "emmet.includeLanguages": { "javascript": "javascriptreact" },
+  "coc.preferences.extensionUpdateCheck": "daily",
+  "prettier.eslintIntegration": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "html",
+    "css",
+    "scss",
+    "javascript",
+    "typescript",
+    "vue",
+    "go",
+    "markdown",
+    "json",
+    "jsonc"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "create-react-app": "^4.0.3",
+    "eslint-cli": "^1.1.1"
+  }
+}
