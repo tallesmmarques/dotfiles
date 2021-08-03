@@ -6,16 +6,18 @@
 - clean: ['~']
 
 - link:
-    ~/.bash_profile: bash_profile
-    ~/.bashrc: bashrc
-    ~/.bash_logout: bash_logout
+  #  ~/.bash_profile: bash_profile
+  #  ~/.bashrc: bashrc
+  #  ~/.bash_logout: bash_logout
     ~/.gitconfig: gitconfig
     ~/.zshrc: zshrc
-    ~/.xinitrc: xinitrc
-    ~/.config/i3: config/i3/
-    ~/.config/bspwm: config/bspwm/
-    ~/.config/polybar: config/polybar/
-    ~/.config/rofi: config/rofi/
-    ~/.config/sxhkd: config/sxhkd/
+  #  ~/.xinitrc: xinitrc
+  #  ~/.config/i3: config/i3/
+  #  ~/.config/bspwm: config/bspwm/
+  #  ~/.config/polybar: config/polybar/
+  #  ~/.config/rofi: config/rofi/
+  #  ~/.config/sxhkd: config/sxhkd/
+    ~/.config/nvim: config/nvim/
+    ~/.config/yarn: config/yarn/
     ~/scripts: scripts/
     ~/colors: colors/
